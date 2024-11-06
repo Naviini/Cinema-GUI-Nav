@@ -106,8 +106,106 @@
     content: '';
     width: 95%;
     height: 200px;
-    border: 1px solid #fff;
+    border: 1px solid #fff;   /*should be  comment on future*/
+    top: 0;
     background: linear-gradient(0deg , trnsparent, #1f2025);
     z-index: -10;
     border-radius: 20px;
+}
+
+.book .right .head_time{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.book .right .head_time::before{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 250px;
+    top: 0;
+    background: liner-gradiant(90deg, trasparent, #1f2025);
+    right: -25px;
+    z-index: -9;
+}
+
+.book .right .head_time::after{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 250px;
+    top: 0;
+    background: liner-gradiant(270deg, trasparent, #1f2025);
+    left: -25px;
+    z-index: -9;
+}
+
+.book .right .head_time h1{
+    color: #fff;
+    font-weight: 600;
+}
+
+.book .right .head_time .time{
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.book .right .head_time h6{
+    font-size: 13px;
+    margin-right: 15px;
+}
+
+.book .right .head_time .time h6 i{
+    margin-right: 5px;
+}
+
+.book .right .head_time .time button{
+    padding: 4px 10px;
+    border-radius: 10px;
+    border: 2px solid #fd6565;
+    color: #fff;
+    background: none;
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s linear;
+}
+
+.book .right .head_time .time button:hover{
+    background: #fd6565;
+}
+
+.book .right .data_type {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.book .right .data_type .left_card , .right_card{
+    width: 45%;
+    border: 1px solid #fff;
+}
+
+.book .right .data_type::before{
+    width: 102%;
+    height: 190px;
+    left: -15px;
+    top: o;
+    content: '';
+    position: absolute;
+    background: linear-gradient(180deg , trasparent , #1f2025);
+    z-index: -9;
+}
+
+.book .right .data_type .left_card .title{
+    color: #fff;
+}
+
+.book .right .data_type .left_card .crd{
+    
 }
