@@ -14,6 +14,7 @@
 }
 
 .book{
+    background: #ff060655; /**/
     width: 92%;
     height: 90%;
     /* border: 1px solid #fff; */
@@ -75,11 +76,13 @@
 }
 
 .book .right{
+    /* background-color: rgb(38, 0, 255); */
+    /*comment this later*/
     padding: 10px 40px;
     background: unset;
 }
 
-.book .right::before{
+/* .book .right::before{
     position: absolute;
     content: '';
     width: 95%;
@@ -88,9 +91,10 @@
     background: url(img/gladiator2.jpg)no-repeat center -30px/cover;
     z-index: -10;
     border-radius: 20px;
-}
+} */
 
 .book .right::before{
+    /* background-color: #3c03f7; */
     position: absolute;
     content: '';
     width: 95%;
@@ -102,6 +106,8 @@
 }
 
 .book .right::after{
+    background-color: #ff0606;
+    /*comment this later*/
     position: absolute;
     content: '';
     width: 95%;
@@ -114,6 +120,8 @@
 }
 
 .book .right .head_time{
+    background-color: rgb(240, 142, 13); 
+    /*comment this later*/
     position: relative;
     width: 100%;
     display: flex;
@@ -122,6 +130,8 @@
 }
 
 .book .right .head_time::before{
+    background-color: #9f65fd; 
+    /*comment this later*/
     content: '';
     position: absolute;
     width: 150px;
@@ -133,6 +143,8 @@
 }
 
 .book .right .head_time::after{
+    background-color: aqua; 
+    /*comment this later*/
     content: '';
     position: absolute;
     width: 150px;
@@ -143,18 +155,21 @@
     z-index: -9;
 }
 
-.book .right .head_time h1{
+.book .right .head_time h1{ 
+    background-color: #fd6565ea;
     color: #fff;
     font-weight: 600;
 }
 
 .book .right .head_time .time{
+    background-color: rgb(242, 255, 127); /*comment this later*/
     color: #fff;
     display: flex;
     align-items: center;
 }
 
 .book .right .head_time h6{
+    background-color: #9f65fd; /*comment this later*/
     font-size: 13px;
     margin-right: 15px;
 }
@@ -180,6 +195,8 @@
 }
 
 .book .right .data_type {
+    background-color: #fd65d4b3;
+    /*comment this later*/
     position: relative;
     display: flex;
     align-items: center;
@@ -187,11 +204,15 @@
 }
 
 .book .right .data_type .left_card , .right_card{
+    background-color: #9f65fd;
+    /*comment this later*/
     width: 45%;
     border: 1px solid #fff;
 }
 
 .book .right .data_type::before{
+    background-color: antiquewhite; 
+    /*comment this later*/
     width: 102%;
     height: 190px;
     left: -15px;
@@ -202,10 +223,69 @@
     z-index: -9;
 }
 
-.book .right .data_type .left_card .title{
+.book .right .data_type .title{  /*.book .right .data_type .left_card .title{*/
     color: #fff;
+    background-color:#fd6565; /*comment this later*/
 }
 
-.book .right .data_type .left_card .crd{
-    
+.book .right .data_type .left_card .crd{  /*.book .right .data_type .left_card .crd{*/
+    background-color: aqua; /*comment this later*/
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    border-top: 1pdx solid rgb(184, 184, 184, .2);
+    /* border-top: 1pdx solid rgba(245, 8, 8, 0.821); */
+    padding: 5px 0;
+}
+.book .right .crd::-webkit-scrollbar{  /*.book .right .left_card .crd::-webkit-scrollbar{*/
+    height: 3px;
+    background: rgb(184, 184, 184, .2);
+}
+.book .right .crd::-webkit-scrollbar-thumb{  /*.book .right .left_card .crd::-webkit-scrollbar-thumb{*/
+    height: 3px;
+    background: rgb(184, 184, 184, .5);
+}
+.book .right .crd li{  /*.book .right .left_card .crd li{*/
+    background-color: #65fd81; /*comment this later*/
+    list-style: none;
+    color: #fff;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;   
+}
+.book .right .crd li h6:nth-child(2){  /*.book .right .left_card .crd li h6:nth-child(2){*/
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: .3s linear;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    background-color:#fd6565;  /*comment this later*/
+}
+.book .right .crd li h6:nth-child(2):hover{  /*.book .right .left_card .crd li h6:nth-child(2):hover{*/
+    background: #fd6565;
+}
+.book .right .data_type .right_card li h6:nth-child(2){
+    /* background: transparent; */
+    border-radius: 8px;
+    width: unset;
+    height: unset;
+    padding: 1px 5px 0 5px;
+    /* display: inline; */
+    background-color: #fd6565;  /*comment this later*/
+}
+
+/*JS Active Data Class*/
+.h6_active{
+    background: #fd6565; 
+    /* :important; */
 }
