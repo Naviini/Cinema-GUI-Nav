@@ -68,7 +68,12 @@
 }
 
 .book .left .play:hover{
-    transform: rotate(360deg);
+    /* transform: rotate(360deg); */
+    transform: rotate(180deg);
+}
+/* extra added */
+.book .left .play i{
+    font-size:x-large;
 }
 /* MOVIE DEATAILS */
 .book .left .cont{
@@ -78,7 +83,7 @@
     padding: 0 20px;
     /* padding-left: 20px; */
     /* padding-top: -100px; */
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .book .left .cont h6{
@@ -111,12 +116,13 @@
 /* MOVIE PIC ON THE RIGHHT SIDE */
 .book .right::before{
     /* background-color: #3c03f7; */
-    position: absolute;
+    position:absolute;
     content: '';
     width: 95%;
+    /* width: 100%; */
     height: 250px;
-    border: 1px solid #fff;
-    background: url(img/gladiator2.jpg)no-repeat center -30px/cover;
+    /* border: 1px solid #fff; */
+    background: url(images/gladiator3.jpg)no-repeat center -140px/cover;
     z-index: -10;
     border-radius: 20px;
 }
@@ -127,11 +133,12 @@
     position: absolute;
     content: '';
     width: 95%;
-    height: 200px;
-    border: 1px solid #fff;   
+    height: 100%;
+    /* border: 1px solid #fff;*/
     /*should be  comment on future*/
     top: 0;
-    background: linear-gradient(0deg , trnsparent, #1f2025);
+    background: linear-gradient(0deg , transparent, #1f2025);
+    /* background-image: radial-gradient(transparent, #1f2025); */
     z-index: -10;
     border-radius: 20px;
 }
@@ -154,7 +161,7 @@
     width: 150px;
     height: 250px;
     top: 0;
-    background: liner-gradiant(90deg, trasparent, #1f2025);
+    background: liner-gradiant(90deg, transparent, #1f2025);
     right: -25px;
     z-index: -9;
 }
@@ -167,7 +174,7 @@
     width: 150px;
     height: 250px;
     top: 0;
-    background: liner-gradiant(270deg, trasparent, #1f2025);
+    background: liner-gradiant(270deg, transparent, #1f2025);
     left: -25px;
     z-index: -9;
 }
@@ -176,6 +183,8 @@
     /* background-color: #fd6565ea; */
     color: #fff;
     font-weight: 600;
+    margin-left: 6px;
+    margin-top: 4px;
 }
 /* MOVIE DURATION WITH ICON AND PAGE BUTTON*/
 .book .right .head_time .time{
@@ -184,17 +193,21 @@
     color: #fff;
     display: flex;
     align-items: center;
+    margin-right: -15px;
 }
 /* MOVIE DURATION WITH ICON*/
 .book .right .head_time h6{
     /* background-color: #9f65fd; */
     /*comment this later*/
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 550;
     margin-right: 15px;
 }
 /* TIME ICON */
 .book .right .head_time .time h6 i{
-    margin-right: 5px;
+    margin-right: 6px;
+    font-weight: 600;
+    font-size: 14px;
 }
 /* PAGE BUTTON  */
 .book .right .head_time .time button{
@@ -338,6 +351,7 @@
     color: #fff;
     letter-spacing: 5px;
     font-size: 12px;
+    /* display: none; */
 }
 .book .right .screen::before{
     content: '';
@@ -357,8 +371,10 @@
     width: 95%;
     /* border: 1px solid #fff; */
     margin: auto; /*only this exsist*/
-    margin-top: -50px;
+    /* margin-top: -50px; */
+    margin-top: -57px;
     /* background-color: aqua; */
+    /* display: none; */
 }
 /* CHAIR ROWS */
 .book .right .chair .row{
@@ -426,10 +442,12 @@
 }
 .book .right .details{
     width: 100%;
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    margin-top: 37px;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* display: none; */
 }
 .book .right .details .details_chair{
     align-items: center;
@@ -489,4 +507,31 @@
 }
 .book .right .details .details_chair li:nth-child(3)::after{
     background: #6a65fd;
+}
+.book .right video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -8;
+    /* display: none; */
+}
+.book .right .book_tic{
+    position: absolute;
+    right: 5%;
+    bottom: 40px;
+    padding: 8px 9.5px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: #fd6565;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s linear; 
+    /* display: none; */
+}
+.book .right .book_tic:hover{
+    color: #000;
 }
