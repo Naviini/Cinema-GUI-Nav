@@ -36,6 +36,7 @@
 /* LEFT SIDE OF THE PAGE  */
 .book .left {
     width: 20%;
+    /* height: 100%; */
     /* width: 0%; */
     /* background: #2e3037; */
     background: #2e30374c;
@@ -48,8 +49,8 @@
 .book .left .play{
     position: relative;
     /* left: 15px; */
-    left: 79%;
-    top: -4%;
+    left: 78%;
+    top: -4.4%;
     /* left: 44%;
     top: -25%; */
     /* left: -150px; */
@@ -78,21 +79,23 @@
 /* MOVIE DEATAILS */
 .book .left .cont{
     /* background-color: #9f65fd; */
-    color: #fff;
-    margin-top: -28px;
-    padding: 0 20px;
+    color: #ffffffd7;
+    /* color: #fff; */
+    margin-top: -29px;
+    padding: 0 22px;
     /* padding-left: 20px; */
     /* padding-top: -100px; */
     /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .book .left .cont h6{
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .book .left .cont p{
-   font-size: 12px;
+   font-size: 13px;
    margin-bottom: 10px;
+   margin-top: 1px;
 }
 
 .book .right{
@@ -181,7 +184,8 @@
 /* MOVIE TITLE */
 .book .right .head_time h1{ 
     /* background-color: #fd6565ea; */
-    color: #fff;
+    color: #ffffffe4;
+    /* color: #fff; */
     font-weight: 600;
     margin-left: 6px;
     margin-top: 4px;
@@ -232,30 +236,35 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 /* LEFT CARD n RIGHT CARD of the right side of the page  */
-.book .right .data_type .left_card , .right_card{
+/* .book .right .data_type .left_card , .right_card{
     /* background-color: #9f65fd; */
     /*comment this later*/
-    width: 45%;
+    /* width: 45%; */
     /* border: 1px solid #fff; */
-}
+/* } */ 
 /* LEFT N RIGHT CARD THROUGH TTHE right side of the page inseted of shoe time  */
 .book .right .data_type::before{
     /* background-color: antiquewhite;  */
-    /*comment this later*/
+    /* comment this later */
     width: 102%;
     height: 190px;
     left: -15px;
-    top: o;
+    top: 0;
     content: '';
     position: absolute;
     background: linear-gradient(180deg , trasparent , #1f2025);
     z-index: -9;
 }
-/* CURRENT DATE */
+/* CURRENT DATE n SHOW TIME*/
 .book .right .data_type .title{  /*.book .right .data_type .left_card .title{*/
     color: #fff;
+    font-size: 13px;
+    margin-top: 15px;
+    /* margin-top: -155px; */
+    margin-left: 7px;
     /* background-color:#fd6565;  */
     /*comment this later*/
 }
@@ -268,8 +277,9 @@
     display: flex;
     align-items: center;
     margin-top: 5px;
-    border-top: 1pdx solid rgb(184, 184, 184, .2);
-    /* border-top: 1pdx solid rgba(245, 8, 8, 0.821); */
+    margin-left: 7px;
+    border-top: 1px solid rgb(184, 184, 184, .2);
+    /* border-top: 1px solid rgba(245, 8, 8, 0.821); */
     padding: 5px 0;
 }
 /* SCROLLER */
@@ -284,12 +294,17 @@
     /* background: rgb(30, 215, 10); */
 }
 /* DAY(mon,tue,wed) amd DATES(1,2,3) OF THE MONTH & 2D,3D and showtimes(10.00am)*/
-.book .right .crd li{  /*.book .right .left_card .crd li{*/
+ /*.book .right .left_card .crd li{*/
+ /* .book .right .crd li{  */
+ .book .right .left_card li{ 
     /* background-color: #65fd81;  */
     /*comment this later*/
+    font-size: 18px;
+    font-weight:lighter;
+    color: #ffffffd7;
     list-style: none;
-    color: #fff;
     min-height: 40px;
+    min-width: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -342,7 +357,8 @@
     /* border: 3px solid #fd6565; */
     border-top: 3px solid #fd6565;
     position: relative;
-    margin-top: 10px;
+    margin-top: 55px;
+    margin-left: 11px;
     border-radius: 20%;
     overflow: hidden;
     box-shadow: inset 10px 10px 20px var(--color);
@@ -351,6 +367,7 @@
     color: #fff;
     letter-spacing: 5px;
     font-size: 12px;
+    font-weight: 500;
     /* display: none; */
 }
 .book .right .screen::before{
@@ -360,9 +377,9 @@
     height: 20px;
     border-radius: 50%;
     /* box-shadow: 0px 0px 20px rgb(184, 184, 184, .15); */
-    box-shadow: 0px 0px 50px rgba(184, 184, 184, 0.29);
-    top: -20px;
-    /* top: 0px;  */
+    box-shadow: 0px 0px 50px rgba(184, 184, 184, 0.51);
+    /* top: -20px; */
+    top: -5px; 
     /*-20px to touch the screen*/
     left: 0;
 }
@@ -371,8 +388,8 @@
     width: 95%;
     /* border: 1px solid #fff; */
     margin: auto; /*only this exsist*/
+    margin-left: 36px;
     /* margin-top: -50px; */
-    margin-top: -57px;
     /* background-color: aqua; */
     /* display: none; */
 }
@@ -382,7 +399,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
     margin-top: 15px;
 }
 /* .book .right .chair .row li{ */
@@ -416,9 +433,12 @@
 }
 .book .right .chair .row li:hover{
     /* background: greenyellow; */
-    background: #fd6565;
-    color: #000;
-    font-size: 15px;
+    /* background: #fd6565; */
+    background: #6560f1f0;
+    /* background:rgb(37, 169, 37); */
+    /* color: #000; */
+    color: #fff;
+    font-size: 13px;
 }
 /* LEFT CLUSTER  */
 .book .right .chair .row li:nth-child(6){
@@ -437,7 +457,7 @@
     background: #fd6565 !important;
 }
 .book .right .chair .selected {
-    background: greenyellow !important;
+    background: #6a65fd !important;
     color: #000;
 }
 .book .right .details{
@@ -515,23 +535,75 @@
     width: 100%;
     height: 100%;
     z-index: -8;
-    /* display: none; */
+    display: none;
 }
+/* BACK N FORTH BUTTON  */
 .book .right .book_tic{
     position: absolute;
-    right: 5%;
-    bottom: 40px;
+    right: 6%;
+    /* right: 2.5%; */
+    bottom: -15px;
     padding: 8px 9.5px;
     border-radius: 50%;
     border: none;
     outline: none;
     background: #fd6565;
     color: #fff;
-    font-size: 18px;
+    /* font-size: 18px; */
+    /* width: 30px;
+    height: 30px; */
     cursor: pointer;
     transition: .3s linear; 
     /* display: none; */
 }
 .book .right .book_tic:hover{
     color: #000;
+}
+.book .right .book_tic i{
+    font-size: large;
+    font-weight: bolder;
+} 
+
+
+.book .right .data_type .left_card{
+    /* background-color: #6a65fd; */
+    width: 400px;
+}
+.book .right .data_type .right_card{
+    /* background-color: #6a65fd; */
+    width: 400px;
+}
+.book .right .data_type .right_card .crd{  /*.book .right .data_type .left_card .crd{*/
+    /* background-color: rgba(0, 255, 255, 0.296);*/
+    /*comment this later*/
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 5px; 
+    margin-left: 7px;
+    border-top: 1px solid rgb(184, 184, 184, .2);
+    /* border-top: 1px solid rgba(245, 8, 8, 0.821); */
+    padding: 5px 0;
+}
+/* .book .right .data_type .right_card .title{  /*.book .right .data_type .left_card .title{*/
+    /* color: #fff;
+    margin-top: -7px;
+    margin-right: 400px; */
+    /* background-color:#fd6565;  */
+    /*comment this later*/
+/* } */ 
+.book .right .right_card li{ 
+    /* background-color: #65fd81;  */
+    /*comment this later*/
+    font-size: 18px;
+    color: #ffffffd7;
+    list-style: none;
+    min-height: 40px;
+    min-width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;   
 }
