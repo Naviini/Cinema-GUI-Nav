@@ -70,7 +70,7 @@
 
 .book .left .play:hover{
     /* transform: rotate(360deg); */
-    transform: rotate(180deg);
+    transform: rotate(360deg);
 }
 /* extra added */
 .book .left .play i{
@@ -535,7 +535,7 @@
     width: 100%;
     height: 100%;
     z-index: -8;
-    display: none;
+    /* display: none; */
 }
 /* BACK N FORTH BUTTON  */
 .book .right .book_tic{
